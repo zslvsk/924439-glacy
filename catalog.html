@@ -17,7 +17,29 @@
         <ul class="user-navigation">
           <li class="search-link"><button>Поиск</button></li>
           <li class="login-link"><a href="login.html">Вход</a></li>
-          <li class="cart"><a href="cart.html">Корзина</a></li>
+          <li class="cart"><a href="cart.html">Корзина</a>
+            <div class="cart-list">
+              <h2 class="visually-hidden">Товары в корзине</h2>
+             <form action="echo.htmlacademy.ru" method="post">
+              <table>
+                <tr class="cart-item">
+                  <td><button class="modal-close" type="submit">Удалить товар из корзины</button></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5кг х <span class="cart-price-kg">200руб.</span></td>
+                  <td>300руб.</td>
+                </tr>
+                <tr class="cart-item">
+                  <td><button class="modal-close" type="submit">Удалить товар из корзины</button></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5кг х <span class="cart-price-kg">300руб.</span></td>
+                  <td>450руб.</td>
+                </tr>
+              </table>       
+              <p class="cart-total">Итого:750руб.</p>
+              <button class="button" type="submit">Оформить заказ</button>
+             </form>
+           </div>
+          </li>
         </ul>
         </nav>      
     </header>
