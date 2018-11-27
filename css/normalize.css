@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #98ada1;
+}
+a{
+	color: #ffffff;
+}
+.popup {
+	display: none;
+}
+.navigation {
+	font-weight: 700;
+	line-height: 18px;
+}
+.site-navigation,
+.user-navigation,
+.catalog-menu {
+	list-style: none;
+}

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="header">
@@ -11,7 +14,7 @@
       	</a>
         <ul class="site-navigation">
         	<li><a href="catalog.html" class="site-navigation-item">Каталог</a>
-                <ul class="popup">
+                <ul class="popup catalog-menu">
                 <li class="catalog-menu-item">
                   <a href="#" class="catalog-menu-item-new">Новинки</a>
                 </li>
@@ -74,16 +77,20 @@
   		</section>
   		<article class="blog">
         <p class="new-in-blog">Новое в нашем блоге</p>
-  			<h2 class="text-title blog"><a href="gllacy-blog.html">10 способов сервировки щербетов к столу</a></h2>
+  			<h2><a href="gllacy-blog.html" class="text-title blog-title">10 способов сервировки щербетов к столу</a></h2>
   		</article>
       <div class="emailing">
+        <div class="base">
         <p class="sweet-mailout">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
         </p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="emailing-form">Введите вашу почту</label>
+          <p class="emailing-form">
+            <label class="visually-hidden" for="emailing-form">Введите вашу почту</label>
           <input type="email" name="emailing-form" id="emailing-form" placeholder="Электронная почта">   
+          </p>
           <button class="button" type="submit">Отправить</button>       
         </form>
+      </div>
       </div>
       <!-- Здесь будет карта и инфа-->
         <section class="popup feedback">
@@ -112,7 +119,7 @@
           <li><a href="#" class="social-button vk">ВК</a></li>
         </ul> 
         <ul class="footer-info-list">
-          <li><a href="#" class="footer-info-item">Для поставщиков</a></li>
+          <li><a href="#" class="footer-info-item strong">Для поставщиков</a></li>
           <li><a href="#" class="footer-info-item">Наши документы</a></li>
           <li><a href="#" class="footer-info-item">О производстве</a></li>
           <li><a href="#" class="footer-info-item">Экологические стандарты</a></li>
