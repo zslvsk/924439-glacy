@@ -10,11 +10,11 @@ body {
 
 	background-color: #98ada1;
 }
-a.text-light {
+.text-light {
 	color: #ffffff;
 }
-a.text-light:hover,
-a.text-light:focus {
+.text-light:hover,
+.text-light:focus {
 	color: #e84d37;
 }
 .page-list {
@@ -24,13 +24,14 @@ a.text-light:focus {
 	display: none;
 }
 .text-strong {
-font-weight: 700;
+	font-weight: 700;
 }
 .navigation {
 	line-height: 18px;
 }
-.nav-general a:hover,
-.nav-general a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #323232;
 	background-color: #f7f6f3;
 }
 .text-color {
@@ -85,7 +86,7 @@ font-weight: 700;
 	background-size: 547px 111px;
 	background-position: left; 
 	border: 7px solid white;
-	border-image-source: url("../img/e-mailing-background.svg");0
+	border-image-source: url("../img/e-mailing-background.svg");
 	border-image-repeat: no-repeat;
 	border-image-slice: 7;
 }
@@ -96,16 +97,10 @@ font-weight: 700;
 	border: 1px solid #d3d3d2;
 	background-color: #ffffff;
 }
-input[type="search"]:hover,
-input[type="email"]:hover, 
-input[type="password"]:hover, 
-input[type="text"]:hover  {
+.input-field:hover {
 	border: 2px solid #c7c6c5;
 }
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus {
+.input-field:focus {
 	border: 2px solid #8fbdec;
 }
 .button {

@@ -12,7 +12,7 @@
       <nav class="navigation container text-strong">
       	<a class="header-logo"><img src="img/logo.svg" width="162" height="75" alt="Мороженое Глейси">
       	</a>
-        <ul class="site-navigation nav-general page-list text-color">
+        <ul class="site-navigation nav-general page-list">
         	<li><a href="catalog.html" class="site-navigation-item text-light">Каталог</a>
                 <ul class="popup catalog-menu page-list">
                 <li class="catalog-menu-item">
@@ -40,7 +40,7 @@
             <div class="popup">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Введите в форму интересующий вас товар</label>
-                  <input type="search" name="search" id="search" placeholder="Что ищем?">
+                  <input type="search" class="input-field" name="search" id="search" placeholder="Что ищем?">
               </form>
             </div>
           </li>
@@ -48,10 +48,10 @@
             <div class="popup">
             <form action="https://echo.htmlacademy.ru" method="post">
               <p><label class="visually-hidden" for="email-login">Введите вашу электронную почту</label>
-                 <input type="email" name="email" placeholder="Электронная почта" id="email-login">
+                 <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login">
               </p>
               <p><label class="visually-hidden" for="password">Введите пароль</label>
-              <input type="password" name="password" placeholder="Пароль" id="password">
+              <input type="password" class="input-field" name="password" placeholder="Пароль" id="password">
               </p>
               <div class="login-links">
               <button class="button text-strong" type="submit">Войти</button>
@@ -77,7 +77,7 @@
   		</section>
   		<article class="blog">
         <p class="new-in-blog text-medium text-color">Новое в нашем блоге</p>
-  			<h2><a href="gllacy-blog.html" class="text-title blog-title text-strong text-color">10 способов сервировки щербетов к столу</a></h2>
+  			<h2><a href="gllacy-blog.html" class="text-title blog-title text-strong text-color text-light">10 способов сервировки щербетов к столу</a></h2>
   		</article>
       <div class="emailing">
         <div class="base">
@@ -86,7 +86,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <p class="emailing-form">
             <label class="visually-hidden" for="emailing-form">Введите вашу почту</label>
-          <input type="email" name="emailing-form" id="emailing-form" placeholder="Электронная почта">   
+          <input type="email" class="input-field" name="emailing-form" id="emailing-form" placeholder="Электронная почта">   
           </p>
           <button class="button text-strong" type="submit">Отправить</button>       
         </form>
@@ -99,9 +99,9 @@
           <p class="popup feedback-title">Мы обязательно вам ответим!</p>
           <button class="modal-close" type="button">Закрыть форму обратной связи</button>
             <p><label class="visually-hidden" for="enter-name">Введите ваши имя</label>
-            <input type="text" name="name" placeholder="Как вас зовут?" id="enter-name" value=""></p>
+            <input type="text" class="input-field" name="name" placeholder="Как вас зовут?" id="enter-name" value=""></p>
             <p><label class="visually-hidden" for="email">Введите вашу почту</label>
-              <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?" value="">              
+              <input type="email" class="input-field" name="email" id="email" placeholder="Ваша почта для ответа?" value="">              
             </p>
             <p>
               <label class="visually-hidden" for="claim">Введите здесь ваш вопрос или ваше предложение</label>
@@ -124,7 +124,7 @@
           <li><a href="#" class="footer-info-item text-light">О производстве</a></li>
           <li><a href="#" class="footer-info-item text-light">Экологические стандарты</a></li>
         </ul>
-     <div class="footer-copyright text-light">
+     <div class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><img src="img/logo-htmlacademy-small.svg" height="43" width="122" alt="Логотип Html-академии"></a>
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light">HTML Academy</a>© 2017</p>     
      </div>   
