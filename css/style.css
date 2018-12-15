@@ -39,7 +39,7 @@ img {
 .navigation {
 	line-height: 18px;
 }
-.site-navigation: {
+.site-navigation {
 	line-height: 30px;
 }
 .nav-general a:hover,
@@ -53,12 +53,12 @@ img {
 	opacity: 0.95;
 	box-shadow: inset 0px 2px 1px 0px rgba(94, 94, 94, 0.4);
 }
-.nav-general span:hover {
+.nav-general li:hover span {
     border-bottom: 0px;
 }
 .site-navigation-current,
-a.site-navigation-current:hover,
-a.site-navigation-current:focus {
+.site-navigation-current:hover,
+.site-navigation-current:focus {
 	color: #ffffff;
 	background-color: #d07058;
 	border-radius: 50px;
@@ -69,7 +69,7 @@ a.site-navigation-current:focus {
 .text-color {
 	color: #323232;
 }
-.catalog-menu {
+.catalog-menu-dropdown {
 	padding: 0;
     position: absolute;
     display: none;
@@ -82,10 +82,18 @@ a.site-navigation-current:focus {
     z-index: 11;
     overflow: hidden; 
 }
-li.catalog-menu-item:first-child {
+.menu-link {
+	color: black;
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+    padding: 10px 20px 15px;
+}
+.catalog-menu-item-new {
 	position: relative;
 }
-li.catalog-menu-item:first-child:after {
+.catalog-menu-item-new:after {
 	position: absolute;
     content: "";
     bottom: 0px;
@@ -94,25 +102,18 @@ li.catalog-menu-item:first-child:after {
     height: 1px;
     background-color: #d1d0ce;
 }
-.catalog-menu a {
-	color: black;
-	display: block;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 16px;
-    padding: 10px 20px 15px;
-}
-.text-strong,
-a.text-strong {
+.text-strong {
 	font-weight: 700;
 }
-.catalog-menu a:hover {
+.catalog-menu-dropdown a:hover {
 	background-color: #fbded7;
+}
+.catalog-menu-dropdown a:hover,
+.catalog-menu-dropdown a:active {
 	border-radius: 0;
 }
-.catalog-menu a:active {
+.catalog-menu-dropdown a:active {
 	background-color: #f6b5a5;
-	border-radius: 0;
 	box-shadow: none;
 }
 .catalog-menu-item .link-current {
@@ -161,7 +162,7 @@ a.text-strong {
 	border: 1px solid #c7c6c5;
 }
 .input-field:focus {
-	border: 1px solid #8fbdec;
+	border-color: #8fbdec;
 }
 .button {
 	text-align: center;
@@ -194,9 +195,7 @@ a.text-strong {
 }
 .catalog-item-title {
 	text-align: center;
-    margin-top: -7px;
-    padding-left: 6px;
-    padding-right: 7px;
+    margin: 0px 5px;
    	font-size: 16px;
 }
 .footer-info-item {
@@ -210,15 +209,13 @@ a.text-strong {
 /* Сеточные стили*/
 /*Index*/
 .header {
+	margin-top: 10px;
 	margin-bottom: 2px;
 }
 .container {
 	width: 1145px;
 	margin: 0 auto;
 	padding: 0 15px;
-}
-.header-logo {
-	margin-top: 10px;
 }
 .flex-style {
 	display: flex;
@@ -242,7 +239,7 @@ a.text-strong {
 .page-list-item {
 	position: relative;
 }
-.page-list-item span::before {
+.page-list-item::before {
 	content: "»";
 	position: absolute;
 	bottom: 16px;
@@ -261,15 +258,14 @@ a.text-strong {
 	font-size: 14px;
 	line-height: 16px;
 }
-.user-navigation-item:last-of-type {
+.user-navigation-item:last-child {
 	margin-right: 0px;
 }
 .padding-brother {
 	padding: 10px 10px 10px 45px;
 }
-.padding-brothers:hover {
+.padding-brother:hover {
 	background-color: #f8f7f4;
-	padding: 10px 10px 10px 45px;
 	border-radius: 20px;
 }
 .search {
@@ -296,15 +292,7 @@ a.text-strong {
 	background-color: #f8f7f4;
 }
 .search:hover::before {
-	content: "";
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    width: 17px;
-    height: 17px;
 	background-image: url("../img/zoom-black.svg");
-	background-repeat: no-repeat;
-    background-position: 0 0;
 }
 .search-menu {
 	position: absolute;
@@ -720,18 +708,10 @@ a.cart-current {
   	flex-wrap: wrap;
  	margin-bottom: 140px;
 }
-.catalog-item {
-	flex-basis: 265px;
-    min-height: 355px;
-    position: relative;
-    padding: 10px 10px 40px;
-    margin-bottom: -55px;
-    z-index: 10;
-}
 .pic-ice-cream {
     width: 267px;
     height: 267px;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
     border-radius: 50%;
     z-index: 10;
 }
@@ -750,6 +730,14 @@ a.cart-current {
     left: 40px;
     border-radius: 45px;
     top: 345px;
+}
+.catalog-item {
+	flex-basis: 265px;
+    min-height: 355px;
+    position: relative;
+    padding: 10px 10px 40px;
+    margin-bottom: -55px;
+    z-index: 10;
 }
 .catalog-item:hover {
 	position: relative;
