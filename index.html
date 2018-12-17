@@ -35,7 +35,7 @@
         	 <li><a href="about-company.html" class="site-navigation-item text-light"><span class="underline">О Компании</span></a></li>
         </ul>
         <ul class="user-navigation nav-general text-style page-list text-color flex-style">
-          <li class="user-navigation-item text-medium"><a href="search.html" class="search"></a>
+          <li class="user-navigation-item text-medium"><button type="button" class="search">Поиск</button>
             <div class="popup search-menu">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Введите в форму интересующий вас товар</label>
@@ -46,10 +46,14 @@
           <li class="user-navigation-item text-medium"><a href="login.html" class="text-light login padding-brother common-radius">Вход</a>
             <div class="popup login-menu">
              <form action="https://echo.htmlacademy.ru" method="post">
-                  <p><label class="visually-hidden" for="email-login">Введите вашу электронную почту</label>
-                      <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login"></p>
-                  <p><label class="visually-hidden" for="password">Введите пароль</label>
-                      <input type="password" class="input-field" name="password" placeholder="Пароль" id="password"></p>
+                  <p>
+                      <label class="visually-hidden" for="email-login">Введите вашу электронную почту</label>
+                      <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login">
+                  </p>
+                  <p>
+                      <label class="visually-hidden" for="password">Введите пароль</label>
+                      <input type="password" class="input-field" name="password" placeholder="Пароль" id="password">
+                  </p>
                   <div class="login-links flex-style">
                      <button class="button login-button text-strong" type="submit">Войти</button>
                      <ul class="page-list account-list">
@@ -60,7 +64,8 @@
              </form>
             </div>
           </li>
-          <li class="user-navigation-item text-medium"><a href="cart.html" class="cart text-light padding-brother common-radius">Пусто</a></li>
+          <li class="user-navigation-item text-medium"><a href="cart.html" class="cart text-light padding-brother common-radius">Пусто</a>
+          </li>
         </ul>
       </nav>  		
   	</header>
@@ -78,12 +83,12 @@
   				<li class="information-item text-color item-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
   			</ul>
   		</section>
-      <div class="blog-and-emailing flex-style">
-  		<article class="blog">
+      <div class="customer-capture flex-style">
+  		<article class="blog customer-capture-item  common-radius">
         <p class="new-in-blog text-medium text-color">Новое в нашем блоге</p>
   			<h2><a href="gllacy-blog.html" class="text-title blog-title text-strong text-color text-light">10 способов сервировки фруктовых щербетов к столу</a></h2>
   		</article>
-      <div class="emailing common-radius">
+      <div class="emailing common-radius customer-capture-item">
         <div class="base common-radius">
         <p class="sweet-mailout">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
         </p>
@@ -102,7 +107,8 @@
           <button class="modal-close" type="button">Закрыть форму обратной связи</button>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p><label class="visually-hidden" for="enter-name">Введите ваши имя</label>
-            <input type="text" class="input-field" name="name" placeholder="Как вас зовут?" id="enter-name" value=""></p>
+            <input type="text" class="input-field" name="name" placeholder="Как вас зовут?" id="enter-name" value="">
+            </p>
             <p><label class="visually-hidden" for="email">Введите вашу почту</label>
               <input type="email" class="input-field" name="email" id="email" placeholder="Ваша почта для ответа?" value="">              
             </p>
@@ -113,7 +119,7 @@
             <button class="button text-strong send-button" type="submit">Отправить</button>
         </form>
       </section>
-      <div class="overlay"></div>
+      <div class="overlay">Подложка</div>
   	</main>
     <footer class="footer container flex-style">
         <ul class="footer-social text-light page-list">
@@ -122,7 +128,7 @@
           <li><a href="#" class="social-button facebook text-light"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a href="#" class="social-button vk text-light"><span class="visually-hidden">ВК</span></a></li>
         </ul> 
-        <div class="footer-inf">
+        <div class="footer-legal">
           <ul class="footer-info-list text-light page-list">
             <li><a href="#" class="footer-info-item text-strong text-light heart"><span class="underline">Для поставщиков</span></a></li>
             <li><a href="#" class="footer-info-item text-light"><span class="underline">Наши документы</span></a></li>
@@ -132,7 +138,7 @@
         </div>
      <div class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><img src="img/logo-htmlacademy.svg" height="40" width="110" alt="Логотип Html-академии"></a>
-      <p class="html-a">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><span class="underline">HTML Academy</a>© 2017</p>
+      <p class="html-a">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><span class="underline">HTML Academy</span></a>© 2017</p>
      </div>   
     </footer>
   </body>

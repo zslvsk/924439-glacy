@@ -73,13 +73,13 @@ img {
 	padding: 0;
     position: absolute;
     display: none;
-    top: 60px;
+    top: 65px;
     left: 289px;
     width: 142px;
     border-radius: 5px;
     background-color: #f8f7f4;
     box-shadow: 0 20px 20px rgba(0,0,0,.4);
-    z-index: 11;
+    z-index: 15;
     overflow: hidden; 
 }
 .menu-link {
@@ -152,7 +152,7 @@ img {
 .blog {
 	background-color: #ffffff;
 	background-image: url("../img/strawberry-background.jpg");
-	background-position: 0 0;
+	background-position: 15px 0;
     background-repeat: no-repeat;
 }
 .sweet-mailout {
@@ -270,21 +270,24 @@ img {
 }
 .search {
 	display: block;
-	position: relative;
+    position: relative;
     width: 31px;
     height: 31px;
     background-color: #9db1a5;
     border-radius: 50%;
-    padding: 2px;
+    padding: 15px;
+    font-size: 0;
+    cursor: pointer;
+    border-color: transparent;
 }
 .search::before {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 9px;
+    top: 5px;
+    left: 6px;
     width: 17px;
     height: 17px;
-    background-image: url("../img/zoom.svg");
+    background-image: url(../img/zoom.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -349,7 +352,7 @@ img {
 	border-radius: 5px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0,0,0,.4);
-	z-index: 11;
+	z-index: 15;
 	overflow: hidden;
 }
 .login-menu input {
@@ -426,7 +429,7 @@ a.cart-current {
     border-radius: 5px;
     background-color: #f8f7f4;
     box-shadow: 0 20px 20px rgba(0,0,0,.4);
-    z-index: 12;
+    z-index: 16;
     overflow: hidden;
 }
 .cart-table {
@@ -516,12 +519,11 @@ a.cart-current {
 .information {
 	text-align: left;
 	border-radius: 15px;
+	margin-bottom: 40px;
 }
 .information h1 {
-	padding-top: 19px;
-	padding-left: 20px;
-	padding-bottom: 10px;
-	padding-right: 112px;
+	padding: 20px 20px 10px;
+    max-width: 89%;
 }
 .information-list {
     display: flex;
@@ -531,7 +533,7 @@ a.cart-current {
 .information-item {
     position: relative;
     flex-basis: 480px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .information-list .information-item::before {
 	content: "";
@@ -553,14 +555,14 @@ a.cart-current {
 .information-list .item-4::before {
 	background-image: url("../img/thermometer.svg");
 }
-.blog-and-emailing {
+.customer-capture {
 	margin-bottom: 40px;
 	min-height: 220px;
 }
+.customer-capture-item {
+	flex-basis: 48%;
+}
 .blog {
-	flex-basis: 47%;
-    margin-right: 25px;
-    border-radius: 15px;
     padding-left: 25px;
     padding-top: 7px;
 }
@@ -579,7 +581,6 @@ a.cart-current {
     background-color: #f8f7f4;
 }
 .emailing {
-	flex-basis: 48%;
 	background-color: #f8f7f4;
 	background-repeat: no-repeat;
 	background-image: url("../img/e-mailing-background.svg");
@@ -645,8 +646,8 @@ a.cart-current {
 	border-color: #dae2de;
 	box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.4);
 }
-.footer-inf {
-	width: 315px;
+.footer-legal {
+	max-width: 315px;
 	margin-top: 12px;
 }
 .footer-info-list {
@@ -816,4 +817,5 @@ a.cart-current {
 	height: 100%;
 	background-color: rgba(68, 96, 148,.3);
 	z-index: 1;
+	font-size: 0;
 }
