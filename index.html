@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="site-wrapper">
   	<header class="header">
       <nav class="navigation container text-strong flex-style">
       	<div class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="Мороженое Глейси"></div>
@@ -74,6 +75,70 @@
          <span class="working-hours text-style text-strong">с 10 до 20, ежедневно</span>
          <span class="telephone-number text-strong">8 812 450 25 25</span>
       </div>
+      <section class="slider">
+        <input class="visually-hidden" type="radio" id="cone-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="cone-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="cone-3" name="toggle">
+        <div class="slider-controls">
+          <label for="cone-1">1</label>
+          <label for="cone-2">2</label>
+          <label for="cone-3">3</label>
+        </div>
+        <ul class="slider-list page-list">
+          <li class="slider-item" id="slide-1">
+            <h3 class="slider-title text-strong">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="button slider-button text-light" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item" id="slide-2">
+            <h3 class="slider-title text-strong">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="button slider-button text-light" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item" id="slide-3">
+            <h3 class="slider-title text-strong">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="button slider-button text-light" href="#">Давайте оба!</a>
+          </li>
+        </ul> 
+      </section>
+      <div class="customer-capture flex-style promo">
+        <div class="customer-capture-item common-radius raspberry-for-free promo-item">
+          <h2 class="promo-title title-font text-strong">Малинка даром!</h2>
+          <p class="promo-offer text-strong">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#" class="button cc-button button-left">Хочу варенье!</a>
+        </div>
+        <div class="customer-capture-item common-radius chocolate-for-free promo-item">
+          <h2 class="promo-title title-font text-strong">Шоколадки даром!</h2>
+          <p class="promo-offer text-strong">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="#" class="button cc-button button-right">Хочу шоколадки!</a>
+        </div>
+      </div>
+      <section class="bestsellers">
+          <ul class="catalog-list page-list flex-style">
+            <li class="catalog-item bestseller">
+               <div class="catalog-item-pic"><img src="img/orange-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></div>
+               <p class="price text-strong">310₽<span class="measure text-strong">/кг</span></p>
+              <h2 class="catalog-item-title text-medium"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h2> 
+              <button class="button fast-view" type="button">Быстрый просмотр</button>
+            </li>
+            <li class="catalog-item bestseller">
+              <div class="catalog-item-pic"><img src="img/coffe-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочно-кофейное мороженое с кусочками шоколада"></div>
+              <p class="price text-strong">380₽<span class="measure text-strong">/кг</span></p>
+              <h2 class="catalog-item-title text-medium"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h2>
+              <button class="button fast-view" type="button">Быстрый просмотр</button>
+            </li>
+            <li class="catalog-item bestseller">
+              <div class="catalog-item-pic"><img src="img/srawberry-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></div>
+              <p class="price text-strong">355₽<span class="measure text-strong">/кг</span></p>
+              <h2 class="catalog-item-title text-medium"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></h2>
+              <button class="button fast-view" type="button">Быстрый просмотр</button>
+            </li>
+            <li class="catalog-item bestseller">
+              <div class="catalog-item-pic"><img src="img/creme-brulee-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочное мороженое крем-брюле с карамельной подливкой"></div>
+              <p class="price text-strong">415₽<span class="measure text-strong">/кг</span></p>
+              <h2 class="catalog-item-title text-medium"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></h2>
+              <button class="button fast-view" type="button">Быстрый просмотр</button>
+            </li>
+            </ul>  
+      </section>
   		<section class="information">
   			<h1 class="text-title info text-medium text-color">Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h1>
   			<ul class="information-list page-list">
@@ -100,7 +165,19 @@
       </div>
       </div>
       </div>
-      <!-- Здесь будет карта и инфа-->
+      <section>
+      <!-- Здесь будет карта-->
+      <div class="contact-info-full">
+        <p class="small-letters">Адрес главного офиса<br>
+        и офлайн-магазина:<br>
+        <span class="big-letters text-strong">ул. Большая Конюшенная<br> 
+        19/8, Санкт-Петербург</p>
+        <p class="small-letters">Для заказов по телефону:<br>
+        <span class="big-letters text-strong">8 812 450-25-25</span><br> 
+        (с 10 до 20 ежедневно)</p>
+        <button type="button" class="button feedback-button">Форма обратной связи</button>
+      </div>
+      </section>
         <section class="popup feedback">
           <h2 class="visually-hidden">Связаться с нами</h2>
           <p class="feedback-title text-medium">Мы обязательно вам ответим!</p>
@@ -141,5 +218,6 @@
       <p class="html-a">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><span class="underline">HTML Academy</span></a>© 2017</p>
      </div>   
     </footer>
+    </div>
   </body>
 </html>

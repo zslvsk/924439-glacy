@@ -102,7 +102,30 @@
          <span class="telephone-number text-strong">8 812 450 25 25</span>
         </div>
       </div>
-      <h1 class="catalog-main-title text-strong">Сливочное мороженое</h1>
+      <h1 class="catalog-main-title text-strong title-font">Сливочное мороженое</h1>
+      <div class="filter">
+        <form action="https://echo.htmlacademy.ru" method="post">    
+        <fieldset class="filter-item">   
+          <legend>Сортировка:</legend> 
+          <select name="sort-by" class="sort-by">
+            <option value="bestselling">по популярности</option>
+            <option value="low-price">сначала недорогие</option>
+            <option value="high-price">сначала дорогие</option>
+            <option value="fat-content">по жирности</option>
+          </select>
+        </fieldset>  
+        <fieldset class="filter-item">
+          <legend>Цена: 100руб. - 500руб.</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </fieldset>
+        </form>
+      </div>
       <section class="catalog">
           <ul class="catalog-list page-list flex-style">
             <li class="catalog-item">
@@ -177,6 +200,15 @@
              <h2 class="catalog-item-title text-medium"><span class="underline">Сливочное с мятным сиропом</span></h2>
              <button class="button fast-view" type="button">Быстрый просмотр</button>
             </li>
+          </ul>
+          <ul class="pagination-list page-list">
+              <li class="pagination-item"><a class="previous disabled">Назад</a></li>
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">4</a></li>
+              <li class="pagination-item"><a href="#">5</a></li>
+              <li class="pagination-item"><a href="#" class="next">Вперед</a></li>
           </ul>
       </section>
     </main>
