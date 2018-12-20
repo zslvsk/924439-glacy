@@ -17,19 +17,19 @@
           <li><a href="catalog.html" class="site-navigation-current site-navigation-item catalog-menu-main text-light">Каталог</a>
             <ul class="popup catalog-menu-dropdown page-list">
                 <li class="catalog-menu-item catalog-menu-item-new">
-                  <a class="text-light text-strong menu-link">Новинки</a>
+                  <a class="text-light text-strong menu-link text-style">Новинки</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="catalog.html" class="text-light menu-link link-current">Сливочное</a>
+                  <a href="catalog.html" class="text-light menu-link text-style link-current">Сливочное</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Щербеты</a>
+                  <a href="#" class="text-light menu-link text-style">Щербеты</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Фруктовый лед</a>
+                  <a href="#" class="text-light menu-link text-style">Фруктовый лед</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Мелорин</a>
+                  <a href="#" class="text-light menu-link text-style">Мелорин</a>
                 </li>
                 </ul>
            </li>   
@@ -103,10 +103,11 @@
         </div>
       </div>
       <h1 class="catalog-main-title text-strong title-font">Сливочное мороженое</h1>
-      <div class="filter">
-        <form action="https://echo.htmlacademy.ru" method="post">    
-        <fieldset class="filter-item">   
-          <legend>Сортировка:</legend> 
+      <section class="filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">    
+        <fieldset class="filter-item text-medium">   
+          <legend class="text-style">Сортировка:</legend> 
           <select name="sort-by" class="sort-by">
             <option value="bestselling">по популярности</option>
             <option value="low-price">сначала недорогие</option>
@@ -114,8 +115,8 @@
             <option value="fat-content">по жирности</option>
           </select>
         </fieldset>  
-        <fieldset class="filter-item">
-          <legend>Цена: 100руб. - 500руб.</legend>
+        <fieldset class="filter-item text-medium">
+          <legend class="text-style">Цена: 100руб. - 500руб.</legend>
           <div class="range-controls">
             <div class="scale">
               <div class="bar"></div>
@@ -124,8 +125,55 @@
             <div class="toggle toggle-max"></div>
           </div>
         </fieldset>
+        <fieldset class="filter-item text-medium">
+          <legend class="text-style">Жирность:</legend>
+          <ul class="page-list filter-list">
+            <li class="filter-option fat-item">
+              <input class="filter-input filter-input-radio" type="radio" name="fat-content" value="0%" id="fat-0%">
+              <label for="fat-0%">0%</label>
+            </li>
+            <li class="filter-option fat-item">
+              <input class="filter-input filter-input-radio" type="radio" name="fat-content" value="<10%" id="fat-10%" checked>
+              <label for="fat-10%">до 10%</label>  
+            </li>
+            <li class="filter-option fat-item"> 
+              <input class="filter-input filter-input-radio" type="radio" name="fat-content" value="<30%" id="fat-30%">
+              <label for="fat-30%">до 30%</label>  
+            </li>
+            <li class="filter-option fat-item">
+              <input class="filter-input filter-input-radio" type="radio" name="fat-content" value=">30%" id="fat-more-30%">
+               <label for="fat-more-30%">выше 30%</label> 
+            </li>
+          </ul>           
+        </fieldset>
+        <fieldset class="filter-item text-medium">
+          <legend class="text-style">Наполнители:</legend>
+          <ul class="page-list filter-list fillers-list">
+            <li class="filter-option fillers-item">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="chocolate" id="chocolate-field" checked>
+              <label for="chocolate-field">шоколадные</label>
+            </li>
+            <li class="filter-option fillers-item">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="sugar-topping" id="sugar-topping-field" checked>
+              <label for="sugar-topping-field">сахарные присыпки</label>
+            </li>
+            <li class="filter-option fillers-item">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="fruits" id="fruits-field">
+              <label for="fruits-field">фрукты</label>
+            </li>
+            <li class="filter-option fillers-item">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="syrup" id="syrup-field">
+              <label for="syrup-field">сиропы</label>
+            </li>
+            <li class="filter-option fillers-item">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="jam" id="jam-field">
+              <label for="jam-field">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="apply-button common-radius" type="submit">Применить</button>
         </form>
-      </div>
+      </section>
       <section class="catalog">
           <ul class="catalog-list page-list flex-style">
             <li class="catalog-item">
@@ -212,7 +260,7 @@
           </ul>
       </section>
     </main>
- <footer class="footer container flex-style">
+ <footer class="footer container flex-style footer-catalog">
         <ul class="footer-social text-light page-list">
           <li><a href="#" class="social-button twitter text-light"><span class="visually-hidden">Твиттер</span></a></li>
           <li><a href="#" class="social-button instagram text-light"><span class="visually-hidden">Инстаграм</span></a></li>

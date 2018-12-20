@@ -8,27 +8,31 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <input type="radio" id="product-1" name="toggle" checked>
+    <input type="radio" id="product-2" name="toggle">
+    <input type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
+    <div class="container">
   	<header class="header">
-      <nav class="navigation container text-strong flex-style">
-      	<div class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="Мороженое Глейси"></div>
+      <nav class="navigation text-strong flex-style">
+      	<div class="header-logo"><img src="img/logo.svg" width="154" height="70" alt="Мороженое Глейси"></div>
         <ul class="site-navigation nav-general page-list flex-style">
         	<li><a href="catalog.html" class="site-navigation-item catalog-menu-main text-light"><span class="underline">Каталог</span></a>
                 <ul class="popup catalog-menu-dropdown page-list">
                 <li class="catalog-menu-item catalog-menu-item-new">
-                  <a class="text-light text-strong menu-link">Новинки</a>
+                  <a class="text-light text-strong menu-link text-style">Новинки</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="catalog.html" class="text-light menu-link">Сливочное</a>
+                  <a href="catalog.html" class="text-light menu-link text-style">Сливочное</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Щербеты</a>
+                  <a href="#" class="text-light menu-link text-style">Щербеты</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Фруктовый лед</a>
+                  <a href="#" class="text-light menu-link text-style">Фруктовый лед</a>
                 </li>
                 <li class="catalog-menu-item">
-                  <a href="#" class="text-light menu-link">Мелорин</a>
+                  <a href="#" class="text-light menu-link text-style">Мелорин</a>
                 </li>
                 </ul>
            </li>     
@@ -70,34 +74,31 @@
         </ul>
       </nav>  		
   	</header>
-  	<main class="container">
+  	<main>
       <div class="contact-info">
          <span class="working-hours text-style text-strong">с 10 до 20, ежедневно</span>
          <span class="telephone-number text-strong">8 812 450 25 25</span>
       </div>
       <section class="slider">
-        <input class="visually-hidden" type="radio" id="cone-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="cone-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="cone-3" name="toggle">
-        <div class="slider-controls">
-          <label for="cone-1">1</label>
-          <label for="cone-2">2</label>
-          <label for="cone-3">3</label>
-        </div>
+         <div class="slider-controls">
+            <label for="product-1">1</label>
+            <label for="product-2">2</label>
+            <label for="product-3">3</label>
+          </div>
         <ul class="slider-list page-list">
-          <li class="slider-item" id="slide-1">
-            <h3 class="slider-title text-strong">Крем-брюле и пломбир с малиновым джемом</h3>
-            <a class="button slider-button text-light" href="#">Давайте оба!</a>
-          </li>
-          <li class="slider-item" id="slide-2">
-            <h3 class="slider-title text-strong">Шоколадный пломбир и лимонный сорбет</h3>
-            <a class="button slider-button text-light" href="#">Давайте оба!</a>
-          </li>
-          <li class="slider-item" id="slide-3">
-            <h3 class="slider-title text-strong">Пломбир с помадкой и клубничный щербет</h3>
-            <a class="button slider-button text-light" href="#">Давайте оба!</a>
-          </li>
-        </ul> 
+          <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+        </ul>
       </section>
       <div class="customer-capture flex-style promo">
         <div class="customer-capture-item common-radius raspberry-for-free promo-item">
@@ -170,7 +171,7 @@
       <div class="contact-info-full">
         <p class="small-letters">Адрес главного офиса<br>
         и офлайн-магазина:<br>
-        <span class="big-letters text-strong">ул. Большая Конюшенная<br> 
+        <span class="big-letters text-strong">ул. Большая Конюшенная</span><br> 
         19/8, Санкт-Петербург</p>
         <p class="small-letters">Для заказов по телефону:<br>
         <span class="big-letters text-strong">8 812 450-25-25</span><br> 
@@ -198,7 +199,7 @@
       </section>
       <div class="overlay">Подложка</div>
   	</main>
-    <footer class="footer container flex-style">
+    <footer class="footer flex-style">
         <ul class="footer-social text-light page-list">
           <li><a href="#" class="social-button twitter text-light"><span class="visually-hidden">Твиттер</span></a></li>
           <li><a href="#" class="social-button instagram text-light"><span class="visually-hidden">Инстаграм</span></a></li>
@@ -219,5 +220,6 @@
      </div>   
     </footer>
     </div>
+  </div>
   </body>
 </html>
