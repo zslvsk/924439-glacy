@@ -17,7 +17,7 @@
       <nav class="navigation text-strong flex-style">
       	<div class="header-logo"><img src="img/logo.svg" width="154" height="70" alt="Мороженое Глейси"></div>
         <ul class="site-navigation nav-general page-list flex-style">
-        	<li><a href="catalog.html" class="site-navigation-item catalog-menu-main text-light"><span class="underline">Каталог</span></a>
+        	<li><a href="catalog.html" class="site-navigation-item catalog-menu-main text-light open"><span class="underline">Каталог</span></a>
                 <ul class="popup catalog-menu-dropdown page-list">
                 <li class="catalog-menu-item catalog-menu-item-new">
                   <a class="text-light text-strong menu-link text-style">Новинки</a>
@@ -40,7 +40,7 @@
         	 <li><a href="about-company.html" class="site-navigation-item text-light"><span class="underline">О Компании</span></a></li>
         </ul>
         <ul class="user-navigation nav-general text-style page-list text-color flex-style">
-          <li class="user-navigation-item text-medium"><button type="button" class="search">Поиск</button>
+          <li class="user-navigation-item text-medium search-item"><button type="button" class="search">Поиск</button>
             <div class="popup search-menu">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Введите в форму интересующий вас товар</label>
@@ -48,16 +48,16 @@
               </form>
             </div>
           </li>
-          <li class="user-navigation-item text-medium"><a href="login.html" class="text-light login padding-brother common-radius">Вход</a>
+          <li class="user-navigation-item text-medium login-item"><a href="login.html" class="text-light login padding-brother common-radius">Вход</a>
             <div class="popup login-menu">
              <form action="https://echo.htmlacademy.ru" method="post">
                   <p>
                       <label class="visually-hidden" for="email-login">Введите вашу электронную почту</label>
-                      <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login">
+                      <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login required">
                   </p>
                   <p>
                       <label class="visually-hidden" for="password">Введите пароль</label>
-                      <input type="password" class="input-field" name="password" placeholder="Пароль" id="password">
+                      <input type="password" class="input-field" name="password" placeholder="Пароль" id="password" required>
                   </p>
                   <div class="login-links flex-style">
                      <button class="button login-button text-strong" type="submit">Войти</button>
@@ -160,35 +160,40 @@
         </p>
         <form class="emailing-forma" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="emailing-form">Введите вашу почту</label>
-          <input type="email" class="input-field" name="emailing-form" id="emailing-form" placeholder="Электронная почта">   
+          <input type="email" class="input-field" name="emailing-form" id="emailing-form" placeholder="Электронная почта" required>   
           <button class="button text-strong subscribe-button" type="submit">Отправить</button>       
         </form>
       </div>
       </div>
       </div>
-      <section>
-      <!-- Здесь будет карта-->
-      <div class="contact-info-full">
-        <p class="small-letters">Адрес главного офиса<br>
-        и офлайн-магазина:<br>
-        <span class="big-letters text-strong">ул. Большая Конюшенная</span><br> 
-        19/8, Санкт-Петербург</p>
-        <p class="small-letters">Для заказов по телефону:<br>
-        <span class="big-letters text-strong">8 812 450-25-25</span><br> 
-        (с 10 до 20 ежедневно)</p>
-        <button type="button" class="button feedback-button">Форма обратной связи</button>
+      <div class="map">
+          <div>
+              <div class="inner">
+                  <div class="card">
+                      <p class="small-letters">Адрес главного офиса<br>
+                      и офлайн-магазина:<br>
+                      <span class="big-letters text-strong">ул. Большая Конюшенная</span><br> 
+                      19/8, Санкт-Петербург</p>
+                      <p class="small-letters">Для заказов по телефону:<br>
+                      <span class="big-letters text-strong">8 812 450-25-25</span><br> 
+                      (с 10 до 20 ежедневно)</p>
+                      <button type="button" class="button feedback-button">Форма обратной связи</button>
+                  </div>
+              </div>
+          </div>
+          <iframe  class="map-pic google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6047589710156!2d30.32258605837604!3d59.9387003588133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1545418159365" width="1600" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img src="img/map.jpg" alt="карта-офлайн-магазина" width="1250" height="430" class="map-pic">
       </div>
-      </section>
         <section class="popup feedback">
           <h2 class="visually-hidden">Связаться с нами</h2>
           <p class="feedback-title text-medium">Мы обязательно вам ответим!</p>
           <button class="modal-close" type="button">Закрыть форму обратной связи</button>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <p><label class="visually-hidden" for="enter-name">Введите ваши имя</label>
-            <input type="text" class="input-field" name="name" placeholder="Как вас зовут?" id="enter-name" value="">
+            <p><label class="visually-hidden" for="enter-name">Введите ваше имя</label>
+            <input type="text" class="input-field" name="name" id="enter-name" placeholder="Как вас зовут?">
             </p>
             <p><label class="visually-hidden" for="email">Введите вашу почту</label>
-              <input type="email" class="input-field" name="email" id="email" placeholder="Ваша почта для ответа?" value="">              
+              <input type="email" class="input-field" name="email" id="email" placeholder="Ваша почта для ответа?">              
             </p>
             <p>
               <label class="visually-hidden" for="claim">Введите здесь ваш вопрос или ваше предложение</label>
@@ -221,5 +226,6 @@
     </footer>
     </div>
   </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

@@ -37,7 +37,7 @@
           <li><a href="about-company.html" class="site-navigation-item text-light"><span class="underline">О Компании</span></a></li>
         </ul>
         <ul class="user-navigation nav-general text-light page-list text-color flex-style">
-          <li class="user-navigation-item text-medium"><button type="button" class="search">Поиск</button>
+          <li class="user-navigation-item text-medium search-item"><button type="button" class="search">Поиск</button>
             <div class="popup search-menu">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Введите в форму интересующий вас товар</label>
@@ -45,15 +45,15 @@
               </form>
             </div>
           </li>
-              <li class="user-navigation-item text-medium">
+              <li class="user-navigation-item text-medium login-item">
                 <a href="login.html" class="text-light login padding-brother common-radius">Вход</a>
                   <div class="popup login-menu">
                   <form action="https://echo.htmlacademy.ru" method="post">
                         <p><label class="visually-hidden" for="email-login">Введите вашу электронную почту</label>
-                            <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login">
+                            <input type="email" class="input-field" name="email" placeholder="Электронная почта" id="email-login" required>
                         </p>
                         <p><label class="visually-hidden" for="password">Введите пароль</label>
-                            <input type="password" class="input-field" name="password" placeholder="Пароль" id="password">
+                            <input type="password" class="input-field" name="password" placeholder="Пароль" id="password" required>
                         </p>
                         <div class="login-links flex-style">
                           <button class="button login-button text-strong" type="submit">Войти</button>
@@ -65,7 +65,7 @@
                   </form>
                   </div>
               </li>
-          <li class="user-navigation-item text-medium">
+          <li class="user-navigation-item text-medium cart-current-item">
             <a href="cart.html" class="cart cart-current padding-brother common-radius">2 товара</a>
             <div class="popup cart-list">
               <h2 class="visually-hidden">Товары в корзине</h2>
