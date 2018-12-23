@@ -70,18 +70,18 @@ body>input[type=radio] {
 	background-color: #d07058;
 	border-radius: 50px;
 }
-.catalog-menu-main {
+.site-navigation li:first-child {
 	position: relative;
 }
 .text-color {
 	color: #323232;
 }
 .catalog-menu-dropdown {
-	padding: 0;
+	  padding: 0;
     position: absolute;
     display: none;
-    top: 55px;
-    left: 260px;
+    top: 35px;
+    left: 0;
     width: 150px;
     border-radius: 5px;
     background-color: #f8f7f4;
@@ -765,8 +765,8 @@ a.cart-current {
 	background-image: url("../img/e-mailing-background.svg");
 }
 .emailing-forma input {
-	width: 72%;
-	box-sizing: border-box;
+	  width: 72%;
+	  box-sizing: border-box;
     margin-top: 20px;
     margin-right: 0;
     padding: 10px 13px;
@@ -787,8 +787,8 @@ a.cart-current {
     vertical-align: top;
 }
 .inner {
-	min-width: 300px;
-	display: flex;
+	  min-width: 300px;
+	  display: flex;
   	align-items: center;
   	justify-content: flex-end;
   	padding-top: 60px;
@@ -797,14 +797,14 @@ a.cart-current {
   	border: 1px solid #eee;
   	border-radius: 10px;
   	display: inline-block;
-  	padding: 5px 20px;
   	background: #fff;
   	z-index: 2;
   	padding: 30px 20px;
+    /*margin-right: 100px;*/
 }
 .map {
   	position: relative;
-  	padding-bottom: 60px;
+  	padding-bottom: 100px;
 }
 .map-pic {
   	position: absolute;
@@ -816,6 +816,7 @@ a.cart-current {
 .google-map {
 	width: 100%;
 	z-index: 1;
+  top: 0;
 }
 .small-letters {
 	margin: 0;

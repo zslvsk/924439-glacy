@@ -17,7 +17,7 @@
       <nav class="navigation text-strong flex-style">
       	<div class="header-logo"><img src="img/logo.svg" width="154" height="70" alt="Мороженое Глейси"></div>
         <ul class="site-navigation nav-general page-list flex-style">
-        	<li><a href="catalog.html" class="site-navigation-item catalog-menu-main text-light open"><span class="underline">Каталог</span></a>
+        	<li><a href="catalog.html" class="site-navigation-item catalog-menu-main text-light open" tabindex="0"><span class="underline">Каталог</span></a>
                 <ul class="popup catalog-menu-dropdown page-list">
                 <li class="catalog-menu-item catalog-menu-item-new">
                   <a class="text-light text-strong menu-link text-style">Новинки</a>
@@ -114,25 +114,25 @@
       </div>
       <section class="bestsellers">
           <ul class="catalog-list page-list flex-style">
-            <li class="catalog-item bestseller">
+            <li class="catalog-item bestseller" tabindex="0">
                <div class="catalog-item-pic"><img src="img/orange-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></div>
                <p class="price text-strong">310₽<span class="measure text-strong">/кг</span></p>
               <h2 class="catalog-item-title text-medium"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h2> 
               <button class="button fast-view" type="button">Быстрый просмотр</button>
             </li>
-            <li class="catalog-item bestseller">
+            <li class="catalog-item bestseller" tabindex="0">
               <div class="catalog-item-pic"><img src="img/coffe-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочно-кофейное мороженое с кусочками шоколада"></div>
               <p class="price text-strong">380₽<span class="measure text-strong">/кг</span></p>
               <h2 class="catalog-item-title text-medium"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></h2>
               <button class="button fast-view" type="button">Быстрый просмотр</button>
             </li>
-            <li class="catalog-item bestseller">
+            <li class="catalog-item bestseller" tabindex="0">
               <div class="catalog-item-pic"><img src="img/srawberry-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></div>
               <p class="price text-strong">355₽<span class="measure text-strong">/кг</span></p>
               <h2 class="catalog-item-title text-medium"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></h2>
               <button class="button fast-view" type="button">Быстрый просмотр</button>
             </li>
-            <li class="catalog-item bestseller">
+            <li class="catalog-item bestseller" tabindex="0">
               <div class="catalog-item-pic"><img src="img/creme-brulee-ice-cream.jpg" height="272" width="267" class="pic-ice-cream" alt="Сливочное мороженое крем-брюле с карамельной подливкой"></div>
               <p class="price text-strong">415₽<span class="measure text-strong">/кг</span></p>
               <h2 class="catalog-item-title text-medium"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></h2>
@@ -166,9 +166,10 @@
       </div>
       </div>
       </div>
+    </div>
       <div class="map">
           <div>
-              <div class="inner">
+              <div class="inner container">
                   <div class="card">
                       <p class="small-letters">Адрес главного офиса<br>
                       и офлайн-магазина:<br>
@@ -181,7 +182,7 @@
                   </div>
               </div>
           </div>
-          <iframe  class="map-pic google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6047589710156!2d30.32258605837604!3d59.9387003588133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1545418159365" width="1600" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe  class="map-pic google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6047589710156!2d30.32258605837604!3d59.9387003588133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1545418159365" width="1600" height="465" frameborder="0" style="border:0" allowfullscreen></iframe>
         <img src="img/map.jpg" alt="карта-офлайн-магазина" width="1250" height="430" class="map-pic">
       </div>
         <section class="popup feedback">
@@ -204,7 +205,8 @@
       </section>
       <div class="overlay">Подложка</div>
   	</main>
-    <footer class="footer flex-style">
+    <div class="container">
+       <footer class="footer flex-style">
         <ul class="footer-social text-light page-list">
           <li><a href="#" class="social-button twitter text-light"><span class="visually-hidden">Твиттер</span></a></li>
           <li><a href="#" class="social-button instagram text-light"><span class="visually-hidden">Инстаграм</span></a></li>
@@ -224,8 +226,8 @@
       <p class="html-a">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="text-light"><span class="underline">HTML Academy</span></a>© 2017</p>
      </div>   
     </footer>
-    </div>
   </div>
+    </div>
   <script src="js/script.js"></script>
   </body>
 </html>
