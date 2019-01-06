@@ -914,8 +914,8 @@ a.cart-current {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -40px;
   margin-top: 27px;
+  padding: 0;
 }
 .social-button {
   display: block;
